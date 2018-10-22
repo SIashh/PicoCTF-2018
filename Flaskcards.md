@@ -1,4 +1,4 @@
-CTF name : PicoCTF-2018 (28/09/2018 - 12/10/2018)
+CTF name : PicoCTF (28/09/2018 - 12/10/2018)
 
 Challenge name : Flaskcards
 
