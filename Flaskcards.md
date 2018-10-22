@@ -8,5 +8,5 @@ Challenge category : Web
 Challenge points : 350
 Challenge solved : 729 times
 Challenge URL (if not down) : http://2018shell2.picoctf.com:17991/
-
-__Introduction__
+-------
+#__Introduction__
