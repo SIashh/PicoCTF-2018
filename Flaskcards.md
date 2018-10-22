@@ -20,5 +20,8 @@ Challenge URL (if not down) : http://2018shell2.picoctf.com:17991/
 
 # Introduction
 
-This challenge was about SSTI (Server Side Template Injection), as mentionned in the title. Indeed, why *flaskcards* instead of *flashcards* ? We just made a few researches about Flask on the net and it turned out that Flask was a Python Microframework used to develop web content.
+This challenge was about __SSTI__ (Server Side Template Injection), as mentionned in the title. Indeed, why *flaskcards* instead of *flashcards* ? We just made a few researches about Flask on the net and it turned out that Flask was a Python Microframework used to develop web content.
 
+# Detection
+
+As we mentionned previously, the first thing we did was to look for a SSTI. In this website, the only   
