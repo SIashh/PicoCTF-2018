@@ -24,4 +24,12 @@ This challenge was about __SSTI__ (Server Side Template Injection), as mentionne
 
 # Detection
 
-As we mentionned previously, the first thing we did was to look for a SSTI. In this website, the only   
+As we mentionned previously, the first thing we did was to look for a SSTI. This website was composed of 6 pages : 
+* 3 reachable pages without authentication : 
+'* A registering page, nothing to crazy.'
+'* A login page, same here.'
+'* A home page, still not really exciting.'
+*3 pages only reachable after authentication :
+'*' A page where you can create a card with a question and an answer
+'*' A page where you can take a look at the cards you created
+'*' An admin page sayin' that we're not admin
