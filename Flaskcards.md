@@ -43,7 +43,7 @@ As we mentionned previously, the first thing we did was to look for a SSTI. This
 
 *Interesting...* In this web architecture, the only place you can try SSTI is the __create card page__ since you can see the result of the injection in the __page listing cards you've created__. Let's try the basic "{{7\*7}}" injection, see if our first thoughts were right : 
 
-*We inject the payload {{7*7}} in the card's question and we create the card :*
+*We inject the payload {{7\*7}} in the card's question and we create the card :*
 ![Injection into the card's question](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
 
