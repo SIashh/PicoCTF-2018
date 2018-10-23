@@ -29,29 +29,29 @@ As we mentionned previously, the first thing we did was to look for a SSTI. This
 
   `* A registering page, nothing to crazy.`
   
-  ![Registering page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)`
+  ![Registering page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
   `* A login page, same here.`
   
-  ![Login page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)`
+  ![Login page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
   `* A home page, still not really exciting.`
   
-  ![Home page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)`
+  ![Home page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
   
 * 3 pages only reachable after authentication :
 
   `* A page where you can create a card with a question and an answer`
   
-  ![Creating card page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)`
+  ![Creating card page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
   `* A page where you can take a look at the list of cards you've created`
   
-  ![Listing card page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)`
+  ![Listing card page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
   `* An admin page sayin' that we're not admin`
   
-  ![Admin page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)`
+  ![Admin page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
 *Interesting...* In this web architecture, the only place you can try SSTI is the __create card page__ since you can see the result of the injection in the __page listing cards you've created__. Let's try the basic "{{7\*7}}" injection, see if our first thoughts were right. If they were right, the card appearing in the list section should contain "9" in the question, instead of our initial string : 
 
