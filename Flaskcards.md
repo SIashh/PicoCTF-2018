@@ -62,5 +62,6 @@ And this injection resulted in :
 
 ![Result of the injection](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
+*Alright!* This result indicates that the engine template is Jinja2, according to this doc : [Link to RootMe SSTI document](http://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Server-Side%20Template%20Injection%20RCE%20For%20The%20Modern%20Web%20App%20-%20BlackHat%2015.pdf)
 
 
