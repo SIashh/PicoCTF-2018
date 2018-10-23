@@ -41,7 +41,7 @@ As we mentionned previously, the first thing we did was to look for a SSTI. This
 
   `* An admin page sayin' that we're not admin`
 
-*Interesting...* In this web architecture, the only place you can try SSTI is the __create card page__ since you can see the result of the injection in the __page listing cards you've created__. Let's try the basic "{{7\*7}}" injection, see if our first thoughts were right : 
+*Interesting...* In this web architecture, the only place you can try SSTI is the __create card page__ since you can see the result of the injection in the __page listing cards you've created__. Let's try the basic "{{7\*7}}" injection, see if our first thoughts were right. If they were right, the card appearing in the list section should contain "9" in the question, instead of our initial string : 
 
 *We inject the payload {{7\*7}} in the card's question and we create the card :*
 
@@ -52,7 +52,7 @@ As we mentionned previously, the first thing we did was to look for a SSTI. This
 
 ![Result of the injection](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
-*Bingo ! The website is vulnerable to SSTI !*
+*Bingo ! The result is 49 and not our initial string, the website is vulnerable to SSTI !*
 
 # Identify
 
@@ -65,5 +65,9 @@ And this injection resulted in :
 ![Result of the injection](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
 *Alright!* This result indicates that the engine template is Jinja2, according to this doc : [ Server-Side Template Injection RCE For The Modern Web App - BlackHat 15](http://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Server-Side%20Template%20Injection%20RCE%20For%20The%20Modern%20Web%20App%20-%20BlackHat%2015.pdf)
+
+# Exploit
+
+At this point, it took me a long time to figure out what this chall was expecting from us. I tried to print the content of the admin page using a pyjail method, consisting in using the class __subprocess__ to raise a shell. Unfortunately, it leaded to a fail. 
 
 
