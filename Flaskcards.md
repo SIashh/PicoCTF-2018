@@ -82,13 +82,13 @@ And this injection resulted in :
 
 At this point, it took me a long time to figure out what this chall was expecting from us. I tried to print the content of the admin page using a pyjail method, consisting in using the class __subprocess__ to raise a shell. Unfortunately, it leaded to a fail (we'll explain a similar method in the write-up of the __third__ challenge about Flask in this CTF : [Flaskcards and Freedom](url)).
 
-After several write-ups, I found this ressource : [](https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti), talking about sensitive global variables in Jinja2. In these variables, some could be interesting, particularly the __config__ one. We tried to take a look to these variables and config ended up being the crucial one :
+After several write-ups, I found this ressource : [Cheatsheet Flask](https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti), talking about sensitive global variables in Jinja2. In these variables, some could be interesting, particularly the __config__ one. We tried to take a look at these variables and config ended up being the crucial one :
 
 ![Injection of config](url)
 
-*Wow, that's a lot ! Wait..., is there the flag in it ?*
+*Wow, that's a lot ! Wait... is there the flag in it ?*
 
 ![Highlighted flag](url)
 
-Greeat ! We got the flag ! Let's move onto the next challenge : [Flaskcards Skeleton Key](url)
+Greeat ! We got the flag ! Organizers wanted us to think about the secret key in Flasks ! Okay, let's move onto the next challenge : [Flaskcards Skeleton Key](url)
 
