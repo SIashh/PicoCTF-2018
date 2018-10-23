@@ -27,7 +27,7 @@ This challenge was about __SSTI__ (Server Side Template Injection), as mentionne
 As we mentionned previously, the first thing we did was to look for a SSTI. This website was composed of 6 pages : 
 * 3 reachable pages without authentication : 
 
-  `* A registering page, *nothing to crazy*.`
+  `* A registering page, nothing to crazy.`
 
   `* A login page, same here.`
 
@@ -40,3 +40,16 @@ As we mentionned previously, the first thing we did was to look for a SSTI. This
   `* A page where you can take a look at the cards you created`
 
   `* An admin page sayin' that we're not admin`
+
+*Interesting...* In this web architecture, the only place you can try SSTI is the __create card page__ since you can see the result of the injection in the __page listing cards you've created__. Let's try the basic "{{7\*7}}" injection, see if our first thoughts were right : 
+
+*We inject the payload {{7*7}} in the card's question and we create the card :*
+![Injection into the card's question](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
+
+*Then, we take a look at the card we've created in the list section : *
+![Result of the injection](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
+*Bingo ! The website is vulnerable to SSTI !*
+
+
