@@ -37,7 +37,7 @@ As we mentionned previously, the first thing we did was to look for a SSTI. This
 
   `* A page where you can create a card with a question and an answer`
 
-  `* A page where you can take a look at the cards you created`
+  `* A page where you can take a look at the list of cards you've created`
 
   `* An admin page sayin' that we're not admin`
 
