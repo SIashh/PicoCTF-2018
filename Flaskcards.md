@@ -54,7 +54,9 @@ As we mentionned previously, the first thing we did was to look for a SSTI. This
 
 *Bingo ! The website is vulnerable to SSTI !*
 
-From this moment, we need to know which engine template is used if we want to carry on. In order to know that, we create a new card containing the payload "{{7\*'7'}}" : 
+# Identify
+
+From this moment, we need to know which engine template is used if we wanna carry on. In order to know that, we create a new card containing the payload "{{7\*'7'}}" : 
 
 ![Injection into the card's question](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
