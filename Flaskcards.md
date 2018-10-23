@@ -27,7 +27,7 @@ This challenge was about __SSTI__ (Server Side Template Injection), as mentionne
 As we mentionned previously, the first thing we did was to look for a SSTI. This website was composed of 6 pages : 
 * 3 reachable pages without authentication : 
 
-  `* A registering page, nothing to crazy.`
+  `* A registering page, *nothing to crazy*.`
 
   `* A login page, same here.`
 
