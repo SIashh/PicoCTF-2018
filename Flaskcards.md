@@ -37,7 +37,7 @@ As we mentionned previously, the first thing we did was to look for a SSTI. This
 
   `* A home page, still not really exciting.`
   
-  ![Home page](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+  ![Home page](https://user-images.githubusercontent.com/36658045/47420084-e48b0500-d77d-11e8-90fb-784dc11ac4d7.png)
   
 * 3 pages only reachable after authentication :
 
