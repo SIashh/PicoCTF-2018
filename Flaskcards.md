@@ -90,5 +90,5 @@ After several write-ups, I found this ressource : [Cheatsheet Flask](https://peq
 
 ![Highlighted flag](https://user-images.githubusercontent.com/36658045/47420629-2cf6f280-d77f-11e8-9339-521b7aca3ada.png)
 
-Greeat ! We got the flag ! Organizers wanted us to think about the secret key in Flasks ! Okay, let's move onto the next challenge : [Flaskcards Skeleton Key](url)
+Greeat ! We got the flag ! Organizers wanted us to think about the secret key in Flask ! Okay, let's move onto the next challenge : [Flaskcards Skeleton Key](https://github.com/damienjouinot/PicoCTF-2018/blob/master/Flaskcards_Skeleton_Key.md)
 
