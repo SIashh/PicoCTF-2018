@@ -30,6 +30,7 @@ As we mentionned previously, the first thing we did was to look for a SSTI. This
   `* A registering page, nothing to crazy.`
   
   ![Registering page](https://user-images.githubusercontent.com/36658045/47420228-3fbcf780-d77e-11e8-91b4-99428fc2b4f2.png)
+  
 
   `* A login page, same here.`
   
