@@ -25,13 +25,12 @@ This challenge was about __SSTI__ (Server Side Template Injection), as mentionne
 # Detection
 
 As we mentionned previously, the first thing we did was to look for a SSTI. This website was composed of 6 pages : 
-* 3 reachable pages without authentication : 
+* 3 reachable pages __without authentication__ : 
 
   `* A registering page, nothing to crazy.`
   
   ![Registering page](https://user-images.githubusercontent.com/36658045/47420228-3fbcf780-d77e-11e8-91b4-99428fc2b4f2.png)
   
-
   `* A login page, same here.`
   
   ![Login page](https://user-images.githubusercontent.com/36658045/47420189-2320bf80-d77e-11e8-98a9-2522d06492d6.png)
@@ -40,7 +39,7 @@ As we mentionned previously, the first thing we did was to look for a SSTI. This
   
   ![Home page](https://user-images.githubusercontent.com/36658045/47420084-e48b0500-d77d-11e8-90fb-784dc11ac4d7.png)
   
-* 3 pages only reachable after authentication :
+* 3 pages only reachable __after authentication__ :
 
   `* A page where you can create a card with a question and an answer`
   
@@ -77,7 +76,7 @@ And this injection resulted in :
 
 ![Result of the injection](https://user-images.githubusercontent.com/36658045/47420527-f28d5580-d77e-11e8-9131-2817c1ffac05.png)
 
-*Alright!* This result indicates that the engine template is Jinja2, according to this doc : [ Server-Side Template Injection RCE For The Modern Web App - BlackHat 15](http://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Server-Side%20Template%20Injection%20RCE%20For%20The%20Modern%20Web%20App%20-%20BlackHat%2015.pdf)
+*Alright!* This result indicates that the engine template is __Jinja2__, according to this doc : [ Server-Side Template Injection RCE For The Modern Web App - BlackHat 15](http://repository.root-me.org/Exploitation%20-%20Web/EN%20-%20Server-Side%20Template%20Injection%20RCE%20For%20The%20Modern%20Web%20App%20-%20BlackHat%2015.pdf)
 
 # Exploit
 
@@ -91,5 +90,5 @@ After several write-ups, I found this ressource : [Cheatsheet Flask](https://peq
 
 ![Highlighted flag](https://user-images.githubusercontent.com/36658045/47420629-2cf6f280-d77f-11e8-9339-521b7aca3ada.png)
 
-Greeat ! We got the flag ! Organizers wanted us to think about the secret key in Flask ! Okay, let's move onto the next challenge : [Flaskcards Skeleton Key](https://github.com/damienjouinot/PicoCTF-2018/blob/master/Flaskcards_Skeleton_Key.md)
+Greeat ! We got the flag ! Organizers wanted us to think about the __secret key__ in Flask, an important variable in Flask's config ! Okay, let's move onto the next challenge : [Flaskcards Skeleton Key](https://github.com/damienjouinot/PicoCTF-2018/blob/master/Flaskcards_Skeleton_Key.md)
 
